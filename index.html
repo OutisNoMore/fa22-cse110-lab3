@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="media/favicon.ico" />
+    <link rel="icon" href="media/favicon.ico">
     <title>Meeting Minutes Template</title>
   </head>
   <body>
     <header>
       <h1>Group Learning</h1>
       <h2>Learn HTML</h2>
-      <p>Date: <time>04.12.2023</time></p>
+      <p>Date: <time datetime="2023-04-12">04.12.2023</time></p>
     </header>
     <hr>
     <h2>Table of Contents</h2>
@@ -81,7 +81,7 @@
         <ul class="new-topics">
           <li>
             This is what HTML looks like:
-            <ul><li><img width="320" height="240" src="media/sample-HTML.JPG" alt="Example HTML code"/></li></ul>
+            <ul><li><img width="320" height="240" src="media/sample-HTML.JPG" alt="Example HTML code"></li></ul>
           </li>
         </ul>
       </section>
@@ -111,6 +111,7 @@
         <p>
         In this meeting, basic concepts of HTML, and how to host a page written in HTML was discussed. In the next meeting we plan to validate our HTML page using the validate.w3.org website. It is <em>imperative</em> that we validate our HTML to make sure that the webpage is properly formatted and nothing is broken. Some other possible related topics include: <span class="related">CSS</span>,styling for HTML elements, <span class="related">Javascript</span>, make elements interactive.
         </p>
+      </section>
     </main>
     <br>
     <div class="recordings">
@@ -131,14 +132,14 @@
         <form>
           <fieldset>
             <legend>Create an Account</legend>
-            <label>Password: <input type="text" name="password" /></label>
-            <label><input type="checkbox" name="show" />Show Password?</label>
+            <label>Password: <input type="text" name="password"></label>
+            <label><input type="checkbox" name="show">Show Password?</label>
             <br>
             <br>
-            <label><input type="date" name="DoB" /> Date of Birth:</label>
+            <label><input type="date" name="DoB"> Date of Birth:</label>
             <br>
             <br>
-            <label><input type="radio" name="terms" />Yes</label>
+            <label><input type="radio" name="terms">Yes</label>
             <br>
             <br>
             <label>Biograpy</label>
@@ -148,7 +149,7 @@
             <br>
             <br>
             <label for="favorite-animal">What is your favorite animal?</label>
-            <select name="favorite-animal" id="animal">
+            <select name="animal" id="favorite-animal">
               <option value="">--Please Choose an Animal--</option>
               <option value="Angora Rabbit">Angora Rabbit</option>
               <option value="Bluefin Tuna">Bluefin Tuna</option>
@@ -160,7 +161,7 @@
             <br>
             <br>
             <label for="favorite-chicken">What is your favorite Chicken Dish Type?</label>
-            <input list="favorite-chicken" id="chicken" name="chicken">
+            <input list="chickens" id="favorite-chicken" name="chicken">
             <datalist id="favorite-chicken">
               <option value="Fried">
               <option value="Boiled">
