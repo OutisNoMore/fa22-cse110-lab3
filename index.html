@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="media/favicon.ico" />
+    <title>Meeting Minutes Template</title>
+  </head>
+  <body>
+    <header>
+      <h1>Group Learning</h1>
+      <h2>Learn HTML</h2>
+      <p>Date: <time>04.12.2023</time></p>
+    </header>
+    <hr>
+    <h2>Table of Contents</h2>
+    <nav class="toc">
+      <ol>
+        <li class="toc"><a href="#attendance">Attendance</a></li>
+        <li class="toc"><a href="#agenda">Agenda</a></li>
+        <li class="toc"><a href="#old-topic">Previous Meeting Topics</a></li>
+        <li class="toc"><a href="#new-topoic">Current Meeting Topics</a></li>
+        <li class="toc"><a href="#other">Other</a></li>
+        <li class="toc"><a href="#next">TODO for Next Meeting</a></li>
+        <li class="toc"><a href="#summary">Summary of Meeting</a></li>
+        <li class="toc"><a href="#media">Media</a></li>
+      </ol>
+    </nav>
+    <br>
+    <main>
+      <section>
+        <a id="attendance"><h2>Attending Members</h2></a>
+        <ul>
+          <li>
+            Alice
+          </li>
+          <li>
+            Bob
+          </li>
+          <li>
+            Charlie
+          </li>
+          <li>
+            Denise
+          </li>
+          <li>
+            Evan
+          </li>
+        </ul>
+      </section>
+      <br>
+      <section>
+        <a id="agenda"><h2>Agenda</h2></a>
+        <ul class="agenda">
+          <li>
+            What is HTML?
+          </li>
+          <li>
+            HTML Example
+          </li>
+          <li>
+            Host on Github Pages
+          </li>
+          <li>
+            Next Meeting Todo
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a id="old-topic"><h3>Previous Meeting Topics</h3></a>
+        <ul class="old-topics">
+          <li>
+            HTML is a language that lets you create tags or elements for visual or front-end users.
+          </li>
+          <li>
+            HTML uses tags to create elements that the user can see on their browser
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a id="new-topic"><h3>Current Meeting Topics</h3></a>
+        <ul class="new-topics">
+          <li>
+            This is what HTML looks like:
+            <ul><li><img width="320" height="240" src="media/sample-HTML.JPG" alt="Example HTML code"/></li></ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a id="other"><h3>Other</h3></a>
+        <ul class="other">
+          <li>
+            To make our HTML visible to the internet, we need to host it on a server.
+          </li>
+          <li>
+            We use Github pages to host our example: <a id="example" href="https://www.outisnomore.github.io/Lab2_starter">www.outisnomore.github.io/Lab2_starter</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a id="next"><h3>TODO for Next Meeting</h3></a>
+        <ul class="next">
+          <li>
+            <strong>Validate HTML</strong>
+            <ul><li><p>Make sure to use validator.w3.org to validate webpage</p></li></ul>
+            <ul><li><p><i>"This validator checks the markup validity of Web documents in HTML"</i> -validator.w3.org</p></li></ul>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <a id="summary"><h2>Summary of Meeting</h2></a>
+        <p>
+        In this meeting, basic concepts of HTML, and how to host a page written in HTML was discussed. In the next meeting we plan to validate our HTML page using the validate.w3.org website. It is <em>imperative</em> that we validate our HTML to make sure that the webpage is properly formatted and nothing is broken. Some other possible related topics include: <span class="related">CSS</span>,styling for HTML elements, <span class="related">Javascript</span>, make elements interactive.
+        </p>
+    </main>
+    <br>
+    <div class="recordings">
+      <a id="media"><h2>Media</h2></a>
+      <details>
+        <summary><b>Audio:</b><audio src="media/meeting1.mp3" controls></audio></summary>
+        <p>This is an mp3 audio recording of the meeting contents.</p>
+      </details>
+      <details>
+        <summary><b>Video:</b><video width="320" height="240" src="media/meeting1.MOV" controls></video></summary>
+        <p>This is an mp4 video recording of the meeting contents.</p>
+      </details>
+    </div>
+    <hr>
+    <footer>
+      <div class="form">
+        <h2>Sign Up!</h2>
+        <form>
+          <fieldset>
+            <legend>Create an Account</legend>
+            <label>Password: <input type="text" name="password" /></label>
+            <label><input type="checkbox" name="show" />Show Password?</label>
+            <br>
+            <br>
+            <label><input type="date" name="DoB" /> Date of Birth:</label>
+            <br>
+            <br>
+            <label><input type="radio" name="terms" />Yes</label>
+            <br>
+            <br>
+            <label>Biograpy</label>
+            <br>
+            <br>
+            <textarea id="bio" name="biography">This is a short biography about yourself!</textarea>
+            <br>
+            <br>
+            <label for="favorite-animal">What is your favorite animal?</label>
+            <select name="favorite-animal" id="animal">
+              <option value="">--Please Choose an Animal--</option>
+              <option value="Angora Rabbit">Angora Rabbit</option>
+              <option value="Bluefin Tuna">Bluefin Tuna</option>
+              <option value="Caiman">Caiman</option>
+              <option value="Canary">Canary</option>
+              <option value="Dodo Bird">Dodo Bird</option>
+              <option value="Duck">Duck</option>
+            </select>
+            <br>
+            <br>
+            <label for="favorite-chicken">What is your favorite Chicken Dish Type?</label>
+            <input list="favorite-chicken" id="chicken" name="chicken">
+            <datalist id="favorite-chicken">
+              <option value="Fried">
+              <option value="Boiled">
+              <option value="Rotisserie">
+              <option value="Baked">
+              <option value="Stir Fried">
+              <option value="Grilled">
+              <option value="Raw Liver">
+            </datalist>
+            <br>
+            <br>
+            <button>Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
