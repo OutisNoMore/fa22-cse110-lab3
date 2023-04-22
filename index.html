@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Meeting Minutes Template</title>
     <meta charset="utf-8">
     <link rel="icon" href="media/favicon.ico">
-    <title>Meeting Minutes Template</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
   </head>
   <body>
-    <header>
-      <h1>Group Learning</h1>
+    <main>
+    <header class="head">
+      <h1 id="title">Group Learning</h1>
       <h2>Learn HTML</h2>
-      <p>Date: <time datetime="2023-04-12">04.12.2023</time></p>
+      <p id="date">Date: <time datetime="2023-04-12">04.12.2023</time></p>
     </header>
     <hr>
     <h2>Table of Contents</h2>
     <nav class="toc">
       <ol>
-        <li class="toc"><a href="#attendance">Attendance</a></li>
-        <li class="toc"><a href="#agenda">Agenda</a></li>
-        <li class="toc"><a href="#old-topic">Previous Meeting Topics</a></li>
-        <li class="toc"><a href="#new-topoic">Current Meeting Topics</a></li>
-        <li class="toc"><a href="#other">Other</a></li>
-        <li class="toc"><a href="#next">TODO for Next Meeting</a></li>
-        <li class="toc"><a href="#summary">Summary of Meeting</a></li>
-        <li class="toc"><a href="#media">Media</a></li>
+        <li class="toc" id="section"><a href="#attendance">Attendance</a></li>
+        <li class="toc" id="section"><a href="#agenda">Agenda</a></li>
+        <li class="toc" id="section"><a href="#old-topic">Previous Meeting Topics</a></li>
+        <li class="toc" id="section"><a href="#new-topoic">Current Meeting Topics</a></li>
+        <li class="toc" id="section"><a href="#other">Other</a></li>
+        <li class="toc" id="section"><a href="#next">TODO for Next Meeting</a></li>
+        <li class="toc" id="section"><a href="#summary">Summary of Meeting</a></li>
+        <li class="toc" id="section"><a href="#media">Media</a></li>
       </ol>
     </nav>
     <br>
-    <main>
-      <section>
+      <section class="attendance">
         <a id="attendance"><h2>Attending Members</h2></a>
         <ul>
-          <li>
+          <li id="present">
             Alice
           </li>
-          <li>
+          <li id="present">
             Bob
           </li>
-          <li>
+          <li id="present">
             Charlie
           </li>
-          <li>
+          <li id="present">
             Denise
           </li>
-          <li>
+          <li id="present">
             Evan
           </li>
         </ul>
@@ -112,28 +114,27 @@
         In this meeting, basic concepts of HTML, and how to host a page written in HTML was discussed. In the next meeting we plan to validate our HTML page using the validate.w3.org website. It is <em>imperative</em> that we validate our HTML to make sure that the webpage is properly formatted and nothing is broken. Some other possible related topics include: <span class="related">CSS</span>,styling for HTML elements, <span class="related">Javascript</span>, make elements interactive.
         </p>
       </section>
-    </main>
-    <br>
     <div class="recordings">
       <a id="media"><h2>Media</h2></a>
-      <details>
-        <summary><b>Audio:</b><audio src="media/meeting1.mp3" controls></audio></summary>
+      <details id="audio">
+        <summary><b>Audio:</b><audio class="asset" src="media/meeting1.mp3" controls></audio></summary>
         <p>This is an mp3 audio recording of the meeting contents.</p>
       </details>
-      <details>
-        <summary><b>Video:</b><video width="320" height="240" src="media/meeting1.mp4" controls></video></summary>
+      <details id="video">
+        <summary><b>Video:</b><video class="asset" width="320" height="240" src="media/meeting1.mp4" controls></video></summary>
         <p>This is an mp4 video recording of the meeting contents.</p>
       </details>
     </div>
     <hr>
+    </main>
     <footer>
       <div class="form">
         <h2>Sign Up!</h2>
         <form>
           <fieldset>
             <legend>Create an Account</legend>
-            <label>Password: <input type="text" name="password"></label>
-            <label><input type="checkbox" name="show">Show Password?</label>
+            <label id="pass">Password: <input id="pass" type="text" name="password"></label>
+            <label id="pass"><input type="checkbox" name="show">Show Password?</label>
             <br>
             <br>
             <label><input type="date" name="DoB"> Date of Birth:</label>
@@ -142,9 +143,7 @@
             <label><input type="radio" name="terms">Yes</label>
             <br>
             <br>
-            <label>Biograpy</label>
-            <br>
-            <br>
+            <label id="bio">Biograpy:</label>
             <textarea id="bio" name="biography">This is a short biography about yourself!</textarea>
             <br>
             <br>
@@ -178,5 +177,5 @@
         </form>
       </div>
     </footer>
-  </body>
+    </body>
 </html>
