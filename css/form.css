@@ -1,0 +1,113 @@
+/* Form */
+.form {
+  border-style: solid;
+  border-color: hsl(100, 50%, 80%); /* Custom Green */
+  border-radius: 25px;
+  border-width: 2px;
+
+  padding: 15px 25px 25px 15px;
+
+  margin-top: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+
+.form-head {
+  display: flex;
+  justify-content: center;
+  gap: 100px 100px;
+}
+
+.signup {
+  flex-grow: 2;
+}
+
+.description {
+  order: 3;
+}
+
+#myimg {
+  height: 100px;
+  width: 100px;
+}
+
+.form-contents {
+  display: grid;
+  grid-template-rows: 50px 50px 200px 50px 50px 50px;
+  grid-template-columns: 450px 200px;
+}
+
+/* Password element of form */
+.pass {
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  padding: 5px 5px 5px 5px;
+}
+
+.show {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  padding: 5px 5px 5px 5px;
+}
+
+.DoB {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  padding: 5px 5px 5px 5px;
+}
+
+.agree {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  padding: 5px 5px 5px 5px;
+}
+
+/* Biography for form */
+.bio-label {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  padding: 5px 5px 5px 5px;
+}
+
+.bio {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  padding: 5px 5px 5px 5px;
+}
+
+.biography {
+  max-width: 200px;
+  max-height: 190px;
+}
+
+.animal {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  padding: 5px 5px 5px 5px;
+}
+
+.chooser {
+  grid-row-start: 4;
+  grid-column-start: 2;
+  padding: 5px 5px 5px 5px;
+}
+
+.chicken {
+  grid-row-start: 5;
+  grid-column-start: 1;
+  padding: 5px 5px 5px 5px;
+}
+
+.list {
+  grid-row-start: 5;
+  grid-column-start: 2;
+  padding: 5px 5px 5px 5px;
+}
+
+.button {
+  grid-row-start: 6;
+  grid-column-start: 1;
+  padding: 5px 5px 5px 5px;
+}
