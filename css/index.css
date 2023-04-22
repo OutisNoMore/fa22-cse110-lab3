@@ -1,0 +1,87 @@
+main {
+  /* Create border around body */
+  border-style: solid;
+  border-color: hsl(200, 80%, 80%); /* Custom Sky blue */
+  border-width: 2px;
+  border-radius: 25px;
+
+  /* Pad border of body */
+  padding: 25px 50px 8mm 1.3cm;
+
+  /* Pad Margin around body */
+  margin: 15px 15px 15px 15px;
+}
+
+section {
+  margin: 10px 10px 10px 10px;
+}
+
+/* Header */
+.head {
+  background-color: #EEEEEE; /* Grey Background */
+  border-radius: 25px;       /* round edges */
+
+  /* Pad header */
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-left: 5%;
+  padding-bottom: 15px;
+}
+
+/* Make header background blue if on a larger screen */
+@media screen and (min-width: 900px) {
+  .head {
+    background-color: hsl(200, 80%, 80%);
+  }
+}
+
+/* Format header datetime */
+#date {
+  font-style: italic;
+  font-size: 2ch;
+  font-family: "Dancing Script";
+}
+
+/* Format header Title */
+#title {
+  position: sticky; /* Make title scroll within header */
+  top: 10px;
+  right: 50px;
+  left: 50px;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline overline red;
+  color: rgb(235, 143, 52); /* Custom Orange */
+}
+
+/* Table of Contents */
+.toc {
+  border-style: solid;
+  border-color: hsl(50, 25%, 80%);
+  border-width: 1.5px;
+}
+
+/* Add padding around each subsection */
+#section {
+  padding: 5px 5px 5px 5px;
+}
+
+/* Meeting Minutes */
+#present {
+  display: block; 
+  border-style: solid;
+  border-color: hsl(150, 33%, 80%);
+  border-width: 2px;
+
+  padding: 5px 5px 5px ;
+}
+
+/* Change background color for links on hover */
+a:hover {
+  background-color: hsl(360, 80%, 80%); /* Custom Red */
+}
+
+/* Change background color for form on click */
+fieldset:active {
+  background-color: hsl(100, 50%, 80%); /* Custom Green */
+}
