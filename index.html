@@ -5,33 +5,39 @@
     <meta charset="utf-8">
     <link rel="icon" href="media/favicon.ico">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing+Script">
+    <style>
+      * {
+        background-color: hsl(25, 30%, 80%);
+      }
+    </style>
   </head>
   <body>
     <main>
     <header class="head">
       <h1 id="title">Group Learning</h1>
-      <h2>Learn HTML</h2>
-      <p id="date">Date: <time datetime="2023-04-12">04.12.2023</time></p>
+      <h2 style="color: brown;" id="subsection">Learn HTML</h2>
+      <div id="date"><p>Date: <time datetime="2023-04-12">04.12.2023</time></p></div>
     </header>
     <hr>
     <h2>Table of Contents</h2>
     <nav class="toc">
       <ol>
-        <li class="toc" id="section"><a href="#attendance">Attendance</a></li>
-        <li class="toc" id="section"><a href="#agenda">Agenda</a></li>
-        <li class="toc" id="section"><a href="#old-topic">Previous Meeting Topics</a></li>
-        <li class="toc" id="section"><a href="#new-topoic">Current Meeting Topics</a></li>
-        <li class="toc" id="section"><a href="#other">Other</a></li>
-        <li class="toc" id="section"><a href="#next">TODO for Next Meeting</a></li>
-        <li class="toc" id="section"><a href="#summary">Summary of Meeting</a></li>
-        <li class="toc" id="section"><a href="#media">Media</a></li>
+        <li class="toc" id="section"><a id="link" href="#attendance">Attendance</a></li>
+        <li class="toc" id="section"><a id="link" href="#agenda">Agenda</a></li>
+        <li class="toc" id="section"><a id="link" href="#old-topic">Previous Meeting Topics</a></li>
+        <li class="toc" id="section"><a id="link" href="#new-topoic">Current Meeting Topics</a></li>
+        <li class="toc" id="section"><a id="link" href="#other">Other</a></li>
+        <li class="toc" id="section"><a id="link" href="#next">TODO for Next Meeting</a></li>
+        <li class="toc" id="section"><a id="link" href="#summary">Summary of Meeting</a></li>
+        <li class="toc" id="section"><a id="link" href="#media">Media</a></li>
       </ol>
     </nav>
     <br>
       <section class="attendance">
         <a id="attendance"><h2>Attending Members</h2></a>
-        <ul>
+        <ul class="here">
           <li id="present">
             Alice
           </li>
@@ -111,8 +117,7 @@
       <section>
         <a id="summary"><h2>Summary of Meeting</h2></a>
         <p>
-        In this meeting, basic concepts of HTML, and how to host a page written in HTML was discussed. In the next meeting we plan to validate our HTML page using the validate.w3.org website. It is <em>imperative</em> that we validate our HTML to make sure that the webpage is properly formatted and nothing is broken. Some other possible related topics include: <span class="related">CSS</span>,styling for HTML elements, <span class="related">Javascript</span>, make elements interactive.
-        </p>
+        In this meeting, basic concepts of HTML, and how to host a page written in HTML was discussed. In the next meeting we plan to validate our HTML page using the validate.w3.org website. It is <em>imperative</em> that we validate our HTML to make sure that the webpage is properly formatted and nothing is broken. Some other possible related topics include:</p> <span class="related">CSS</span>,styling for HTML elements, <span class="related">Javascript</span>, make elements interactive.
       </section>
     <div class="recordings">
       <a id="media"><h2>Media</h2></a>
@@ -129,53 +134,62 @@
     </main>
     <footer>
       <div class="form">
-        <h2>Sign Up!</h2>
+        <div class="form-head">
+          <div class="signup"><h2>Sign Up!</h2></div>
+          <div class="description"<p>You really should sign up!</p></div>
+          <div class="image"><img id="myimg" src="media/sample-HTML.JPG"></img></div>
+        </div>
         <form>
           <fieldset>
-            <legend>Create an Account</legend>
-            <label id="pass">Password: <input id="pass" type="text" name="password"></label>
-            <label id="pass"><input type="checkbox" name="show">Show Password?</label>
-            <br>
-            <br>
-            <label><input type="date" name="DoB"> Date of Birth:</label>
-            <br>
-            <br>
-            <label><input type="radio" name="terms">Yes</label>
-            <br>
-            <br>
-            <label id="bio">Biograpy:</label>
-            <textarea id="bio" name="biography">This is a short biography about yourself!</textarea>
-            <br>
-            <br>
-            <label for="favorite-animal">What is your favorite animal?</label>
-            <select name="animal" id="favorite-animal">
-              <option value="">--Please Choose an Animal--</option>
-              <option value="Angora Rabbit">Angora Rabbit</option>
-              <option value="Bluefin Tuna">Bluefin Tuna</option>
-              <option value="Caiman">Caiman</option>
-              <option value="Canary">Canary</option>
-              <option value="Dodo Bird">Dodo Bird</option>
-              <option value="Duck">Duck</option>
-            </select>
-            <br>
-            <br>
-            <label for="favorite-chicken">What is your favorite Chicken Dish Type?</label>
-            <input list="chicken-list" id="favorite-chicken" name="chicken-dish">
-            <datalist id="chicken-list">
-              <option value="Fried">
-              <option value="Boiled">
-              <option value="Rotisserie">
-              <option value="Baked">
-              <option value="Stir Fried">
-              <option value="Grilled">
-              <option value="Raw Liver">
-            </datalist>
-            <br>
-            <br>
-            <button>Submit</button>
-          </fieldset>
-        </form>
-      </div>
+            <legend class="legend">Create an Account</legend>
+            <div class="form-contents">
+              <div class="pass">
+                <label>Password:</label>
+                <input type="text" name="password">
+              </div>
+              <div class="show">
+                <label>Show Password?</label>
+                <input type="checkbox" name="show">
+              </div>
+              <div class="DoB">
+                <label >Date of Birth:</label>
+                <input type="date" name="DoB">
+              </div>
+              <div class="agree">
+                <label>Agree:</label>
+                <input type="radio" name="terms">
+              </div>
+              <div class="bio-label"><label>Biograpy:</label></div>
+              <div class="bio"><textarea class="biography">This is a short biography about yourself!</textarea></div>
+              <div class="animal"><label for="favorite-animal">What is your favorite animal?</label></div>
+              <div class="chooser">
+                <select class="chooser" name="animal" id="favorite-animal">
+                  <option value="">--Please Choose an Animal--</option>
+                  <option value="Angora Rabbit">Angora Rabbit</option>
+                  <option value="Bluefin Tuna">Bluefin Tuna</option>
+                  <option value="Caiman">Caiman</option>
+                  <option value="Canary">Canary</option>
+                  <option value="Dodo Bird">Dodo Bird</option>
+                  <option value="Duck">Duck</option>
+                </select>
+              </div>
+              <div class="chicken"><label for="favorite-chicken">What is your favorite Chicken Dish Type?</label></div>
+              <div class="list">
+                <input list="chicken-list" id="favorite-chicken" name="chicken-dish">
+                <datalist id="chicken-list">
+                  <option value="Fried">
+                  <option value="Boiled">
+                  <option value="Rotisserie">
+                  <option value="Baked">
+                  <option value="Stir Fried">
+                  <option value="Grilled">
+                  <option value="Raw Liver">
+                </datalist>
+              </div>
+            <div class="button"><button>Submit</button></div>
+          </div>
+        </fieldset>
+      </form>
     </footer>
-    </body>
+  </body>
 </html>

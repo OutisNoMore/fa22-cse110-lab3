@@ -1,3 +1,15 @@
+li li {
+  list-style-type: square;
+}
+
+li:first-of-type + li {
+  font-weight: bold;
+}
+
+div.recordings {
+  padding: 25px 25px 25px 25px;
+}
+
 main {
   /* Create border around body */
   border-style: solid;
@@ -54,11 +66,16 @@ section {
   color: rgb(235, 143, 52); /* Custom Orange */
 }
 
+#title, #subsection {
+  background-color: hsl(200, 80%, 80%);
+}
+
 /* Table of Contents */
 .toc {
   border-style: solid;
   border-color: hsl(50, 25%, 80%);
   border-width: 1.5px;
+  display: inline;
 }
 
 /* Add padding around each subsection */
@@ -68,16 +85,26 @@ section {
 
 /* Meeting Minutes */
 #present {
+  position: relative;
   display: block; 
   border-style: solid;
   border-color: hsl(150, 33%, 80%);
   border-width: 2px;
+  left: 30px;
 
   padding: 5px 5px 5px ;
 }
 
+.here > li {
+  color: green;
+}
+
+p ~ span {
+  color: yellow;
+}
+
 /* Change background color for links on hover */
-a:hover {
+a[id="link"]:hover {
   background-color: hsl(360, 80%, 80%); /* Custom Red */
 }
 
