@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-lab 2 url: https://outisnomore.github.io/Lab2_Starter
+lab 3 url: https://outisnomore.github.io/fa22-cse110-lab3
